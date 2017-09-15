@@ -31,7 +31,6 @@ Publishing **Test Content** using www.testspace.com.
 
 In order to run this sample you will need a host workstation with installed python 2.6+.
 
-
 Download and configure the Testspace client 
 <pre>
 mkdir -p $HOME/bin
@@ -39,13 +38,11 @@ curl -s https://testspace-client.s3.amazonaws.com/testspace-linux.tgz | tar -zxv
 testspace config url samples.testspace.com
 </pre>
 
-
 Buiding:
 <pre>
 sudo pip install -r requirements.txt
 sudo apt-get install pylint
 </pre>
-
 
 Running Static Analysis: 
 <pre>
@@ -63,4 +60,3 @@ Push Content using Testspace client
 <pre>
 testspace analysis.txt{lint} nose2.xml{stock_alerter} coverage.xml 
 </pre> 
-
