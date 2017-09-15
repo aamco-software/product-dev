@@ -7,7 +7,7 @@ python:
 before_script:
   - mkdir -p $HOME/bin
   - curl -fsSL https://testspace-client.s3.amazonaws.com/testspace-linux.tgz | tar -zxvf- -C $HOME/bin
-  - testspace config url samples.testspace.com
+  - testspace config url rjhowell44.testspace.com
   - pip install -r requirements.txt
   - sudo apt-get install pylint
  
